@@ -1,6 +1,10 @@
+.hr{
+  stroke: grey 2px;
+  width: 500px;
+}
+
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f3cdff;
 }
 
 .footer a {
@@ -47,7 +52,12 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.title b{
+  color: #cb48f0;
 }
 
 .title,
@@ -55,18 +65,62 @@
   text-align: center;
 }
 
+.question{
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  max-width: 800px;
+  background: #cb48f0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 0.3rem solid #cb48f0;
+}
+
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  width: 500px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.action{
+  margin-top: 10rem;
+}
+
+.bigButton{
+  padding: 2rem 3rem;
+  background: #cb48f0;
+  border-radius: 0.8rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bigButton:hover{
+  background: #a530c5;
+}
+
+.ansButton{
+  background: white;
+  border: 0.3rem solid #dc88f3;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  margin: 1rem;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.ansButton:hover{
+  background: #dc88f3;
+  color: white;
+}
+
+.dica {
+  font-size: 1.4rem;
 }
 
 .grid {

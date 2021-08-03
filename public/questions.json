@@ -1,0 +1,260 @@
+[
+  {
+    "_id": 0,
+    "questionText": "01. Qual sua idade?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Entre 6 e 11 anos"
+      },
+      {
+        "id": 1,
+        "answer": "Entre 12 e 16 anos"
+      },
+      {
+        "id": 2,
+        "answer": "Mais de 16 anos"
+      }
+    ],
+    "tip": "Quis dolore do voluptate proident exercitation mollit ea ullamco fugiat."
+  },
+  {
+    "_id": 1,
+    "questionText": "02. O quanto você gosta de ler?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Estou sempre lendo"
+      },
+      {
+        "id": 1,
+        "answer": "Leio bastante"
+      },
+      {
+        "id": 2,
+        "answer": "Leio pouco"
+      },
+      {
+        "id": 3,
+        "answer": "Não leio"
+      }
+    ],
+    "tip": "Et occaecat proident excepteur non consequat."
+  },
+  {
+    "_id": 2,
+    "questionText": "03. Que tipo de filme você gosta de ver?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Infantil"
+      },
+      {
+        "id": 1,
+        "answer": "Ação"
+      },
+      {
+        "id": 2,
+        "answer": "Romance"
+      },
+      {
+        "id": 3,
+        "answer": "Mistério"
+      },
+      {
+        "id": 4,
+        "answer": "Histórico"
+      }
+    ],
+    "tip": "Cupidatat tempor est officia nostrud."
+  },
+  {
+    "_id": 3,
+    "questionText": "04. Quais dessas séries você mais gosta?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Stranger Things"
+      },
+      {
+        "id": 1,
+        "answer": "Elite"
+      },
+      {
+        "id": 2,
+        "answer": "Game of thrones"
+      },
+      {
+        "id": 3,
+        "answer": "La Casa de Papel"
+      },
+      {
+        "id": 4,
+        "answer": "Jovens titãs em ação"
+      }
+    ],
+    "tip": "Amet amet dolor incididunt sunt amet deserunt incididunt."
+  },
+  {
+    "_id": 4,
+    "questionText": "05. Qual destes filmes você prefere?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Turma da Mônica, Laços"
+      },
+      {
+        "id": 1,
+        "answer": "Para todos os garotos que já amei"
+      },
+      {
+        "id": 2,
+        "answer": "Invocação do mal"
+      },
+      {
+        "id": 3,
+        "answer": "Jogador número um"
+      },
+      {
+        "id": 4,
+        "answer": "Harry Potter"
+      }
+    ],
+    "tip": "Elit consectetur aliqua ut aliqua nisi commodo quis laboris voluptate ut occaecat labore excepteur."
+  },
+  {
+    "_id": 5,
+    "questionText": "06. O que não poderia faltar num livro?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Momentos engraçados"
+      },
+      {
+        "id": 1,
+        "answer": "Momentos aterrorizantes"
+      },
+      {
+        "id": 2,
+        "answer": "Momentos fofos entre um casal"
+      },
+      {
+        "id": 3,
+        "answer": "Momentos para pensar sobre a trama"
+      },
+      {
+        "id": 4,
+        "answer": "Momentos de muita emoção"
+      }
+    ],
+    "tip": "Duis id ex dolor cupidatat dolore est incididunt qui eu proident sint dolore."
+  },
+  {
+    "_id": 6,
+    "questionText": "07. Qual seria o seu tipo de personagem?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Um protagonista com história sombria"
+      },
+      {
+        "id": 1,
+        "answer": "Que viva intensamente"
+      },
+      {
+        "id": 2,
+        "answer": "Que goste de se apaixonar"
+      },
+      {
+        "id": 3,
+        "answer": "Que seja aventureiro"
+      },
+      {
+        "id": 4,
+        "answer": "Alguém igual a mim"
+      }
+    ],
+    "tip": "Quis ea aliqua Lorem commodo duis aliquip ipsum ut irure ex consequat do."
+  },
+  {
+    "_id": 7,
+    "questionText": "08. Escolha um cenário:",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Um quarto com um corpo"
+      },
+      {
+        "id": 1,
+        "answer": "Uma bela praça cheia de árvores"
+      },
+      {
+        "id": 2,
+        "answer": "Uma floresta cheia de mistérios"
+      },
+      {
+        "id": 3,
+        "answer": "O Brasil do passado"
+      },
+      {
+        "id": 4,
+        "answer": "Um local que você precisa escapar"
+      }
+    ],
+    "tip": "Dolor ex sint amet voluptate veniam irure."
+  },
+  {
+    "_id": 8,
+    "questionText": "09. Para que época você gostaria de viajar?",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Começo do século vinte"
+      },
+      {
+        "id": 1,
+        "answer": "Não gostaria de estar em outra época"
+      },
+      {
+        "id": 2,
+        "answer": "Época dos dinossauros"
+      },
+      {
+        "id": 3,
+        "answer": "Época medieval"
+      },
+      {
+        "id": 4,
+        "answer": "Ao futuro"
+      }
+    ],
+    "tip": "Amet minim sunt nulla reprehenderit aute officia adipisicing cillum veniam est labore et aliquip eu."
+  },
+  {
+    "_id": 9,
+    "questionText": "10. Escolha uma situação:",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Um garoto subindo um pé de feijão"
+      },
+      {
+        "id": 1,
+        "answer": "Um rapaz numa escola de magia"
+      },
+      {
+        "id": 2,
+        "answer": "Um homem que desconfia da esposa"
+      },
+      {
+        "id": 3,
+        "answer": "Um detetive querendo solucionar um crime"
+      },
+      {
+        "id": 4,
+        "answer": "Alguém que quer vingança"
+      }
+    ],
+    "tip": "Consectetur minim sit veniam voluptate deserunt culpa dolore occaecat dolore est."
+  }
+]
