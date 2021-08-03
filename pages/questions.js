@@ -68,7 +68,7 @@ export default function Questions() {
       
         {
           question && question.length>0 && question[currentQuestion]!=null 
-          ? <p className={styles.question}>
+          ? <p className={styles.question} key={question[currentQuestion].id}>
               {question[currentQuestion].questionText}
             </p>
           : <p>Carregando!</p> } 
@@ -76,8 +76,8 @@ export default function Questions() {
         <div className={styles.grid}>
           {question[currentQuestion]!=null ? question[currentQuestion].answers.map((itemAtual) => {
               return (
-                <button className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.answer)}>
-                  <p>{itemAtual.answer}</p>
+                <button key={itemAtual.id} className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.answer)}>
+                  <p key={itemAtual.id}>{itemAtual.answer}</p>
                 </button>
               )
             }) : 
