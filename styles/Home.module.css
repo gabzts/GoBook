@@ -167,6 +167,15 @@
   margin-left: 0.5rem;
 }
 
+.book{
+  width: 400px;
+  height: 600px;
+  background-color: #f3cdff;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

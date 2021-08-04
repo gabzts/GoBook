@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import Header from '../src/components/Header'
 import styles from '../styles/Home.module.css'
+import Router from 'next/router'
 
 export default function Questions() {
   //guardando as respostas escolhidas
@@ -51,6 +52,7 @@ export default function Questions() {
       console.log(choices);
     } else {
       console.log('Escolhas: ' + choices)
+      Router.push('/books')
     }
   }
 
