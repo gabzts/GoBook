@@ -105,7 +105,12 @@ export default function Questions() {
             {question[currentQuestion]!=null ? question[currentQuestion].answers.map((itemAtual) => {
                 return (
                   <button key={itemAtual.id} className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.answer)}>
-                    <img src={itemAtual.picture} className={styles.respImg}></img>
+                    <Image src={itemAtual.picture}
+                    alt="ícone da pergunta"
+                    className={styles.respImg}
+                    width={70}
+                    height={70}
+                    />
                     <p key={itemAtual.id}>{itemAtual.answer}</p>
                   </button>
                 )

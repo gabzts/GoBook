@@ -20,8 +20,10 @@ export default function Home() {
       <main className={styles.index}>
         <Image src={fundo} 
         className={styles.ilustration}
-        width={700}
-        height={655}/>
+        width={600}
+        height={650}
+        layout="fixed"
+        />
 
         <div className={styles.interact}>
           <h1 className={styles.title}>
