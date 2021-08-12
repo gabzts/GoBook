@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../src/components/Header'
 import styles from '../styles/Home.module.css'
+import fundo from '../src/images/fundoInicial.png'
 
 export default function Home() {
   
@@ -16,25 +17,31 @@ export default function Home() {
 
       <Header />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-         Go<b>Book</b>
-        </h1>
+      <main className={styles.index}>
+        <Image src={fundo} 
+        className={styles.ilustration}
+        width={700}
+        height={655}/>
 
-        <hr className={styles.hr}/>
+        <div className={styles.interact}>
+          <h1 className={styles.title}>
+          VAMOS DESCOBRIR UM NOVO LIVRO?
+          </h1>
 
-        <p className={styles.description}>
-          Fazemos perguntas, você responde e nós te indicamos bons livros para ler!
-        </p>
+          <p className={styles.description}>
+          Oi, eu sou a Bibi, sua parceira de leitura, vou te ajudar a descobrir qual é o livro ideal para você aproveitar uma boa leitura.
+          <br/>
+          <br/>
+          Nesse quiz, nós iremos explorar seu gosto pessoal e lhe contar um pouco sobre nossa história do Conselho Comunitário dos Moradores do Parque Santa Cecília.
+          </p>
 
-        <hr className={styles.hr}/>
-
-        <div className={styles.action}>
-          <button className={styles.bigButton}>
-            <Link href="/questions">
-              <a>Iniciar teste!</a>
-            </Link>
-          </button>
+          <div className={styles.action}>
+            <button className={styles.bigButton}>
+              <Link href="/questions">
+                <a>COMEÇAR</a>
+              </Link>
+            </button>
+          </div>
         </div>
       </main>
 

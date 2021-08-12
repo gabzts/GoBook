@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    padding: 0.2rem 0 0 2rem;
+    background-color: #FD5E70;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.headerLogo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 36px;
+    padding-left: 24px;
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    gap: 1rem;
+}

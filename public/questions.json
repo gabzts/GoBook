@@ -5,15 +5,18 @@
     "answers": [
       {
         "id": 0,
-        "answer": "Entre 6 e 11 anos"
+        "answer": "Entre 6 e 11 anos",
+        "picture": "/respsIcons/r1-1.png"
       },
       {
         "id": 1,
-        "answer": "Entre 12 e 16 anos"
+        "answer": "Entre 12 e 16 anos",
+        "picture": "/respsIcons/r1-2.png"
       },
       {
         "id": 2,
-        "answer": "Mais de 16 anos"
+        "answer": "Mais de 16 anos",
+        "picture": "/respsIcons/r1-3.png"
       }
     ],
     "tip": "Quis dolore do voluptate proident exercitation mollit ea ullamco fugiat."

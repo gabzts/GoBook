@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import fundo from '../src/images/fundoInicial.png'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import Header from '../src/components/Header'
@@ -54,6 +55,8 @@ export default function Questions() {
       console.log('Escolhas: ' + choices)
       Router.push('/books')
     }
+
+    
   }
 
   return (
@@ -66,33 +69,62 @@ export default function Questions() {
 
       <Header />
 
-      <main className={styles.main}>
+      <main className={styles.index}>
+        <div className={styles.questionImg}>
+          <Image src={fundo} 
+          className={styles.ilustration}
+          width={700}
+          height={655}
+          />
+        </div>
       
-        {
-          question && question.length>0 && question[currentQuestion]!=null 
-          ? <p className={styles.question} key={question[currentQuestion].id}>
-              {question[currentQuestion].questionText}
-            </p>
-          : <p>Carregando!</p> } 
+        <div className={styles.interact}>
+          {
+            //PROGRESSO DO QUIZ
+            question && question.length>0 && question[currentQuestion]!=null 
+            ? <p className={styles.progress}>
+                Pergunta {currentQuestion+1} de {question.length}
+              </p>
+            : <p>Carregando!</p> 
+          } 
 
-        <div className={styles.grid}>
-          {question[currentQuestion]!=null ? question[currentQuestion].answers.map((itemAtual) => {
-              return (
-                <button key={itemAtual.id} className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.answer)}>
-                  <p key={itemAtual.id}>{itemAtual.answer}</p>
-                </button>
-              )
-            }) : 
-              <p>Carregando!</p>
-            }
+          <div className={styles.slider}>
+            
+          </div>
+
+          {
+            //ENUNCIADO DA QUESTÂO
+            question && question.length>0 && question[currentQuestion]!=null 
+            ? <p className={styles.question} key={question[currentQuestion].id}>
+                {question[currentQuestion].questionText}
+              </p>
+            : <p>Carregando!</p> 
+          } 
+
+          <div className={styles.grid}>
+            {question[currentQuestion]!=null ? question[currentQuestion].answers.map((itemAtual) => {
+                return (
+                  <button key={itemAtual.id} className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.answer)}>
+                    <img src={itemAtual.picture} className={styles.respImg}></img>
+                    <p key={itemAtual.id}>{itemAtual.answer}</p>
+                  </button>
+                )
+              }) : 
+                <p>Carregando!</p>
+              }
+          </div>
+
+          <div className={styles.action}>
+            <button className={styles.answerActionsButtons}>
+              Voltar
+            </button>
+
+            <button className={styles.answerActionsButtons}>
+              Próximo
+            </button>
+          </div>
         </div>
       </main>
-      
-      <footer className={styles.footer}>
-        {
-          question && question.length>0 && question[currentQuestion]!=null && <p className={styles.dica}>Hey! Dica: <b>{question[currentQuestion].tip}</b></p>
-        }
-      </footer>
     </div>
   )
 }
