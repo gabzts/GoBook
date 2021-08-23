@@ -1,263 +1,242 @@
 [
   {
     "_id": 0,
-    "questionText": "01. Qual sua idade?",
+    "questionText": "01. O quanto você gosta de ler livros?",
     "answers": [
       {
         "id": 0,
-        "answer": "Entre 6 e 11 anos",
-        "picture": "/respsIcons/r1-1.png"
+        "answer": "Estou sempre lendo",
+        "picture": "/respsIcons/r1-1.png",
+        "tag": "Longa"
       },
       {
         "id": 1,
-        "answer": "Entre 12 e 16 anos",
-        "picture": "/respsIcons/r1-2.png"
+        "answer": "Leio mais ou menos",
+        "picture": "/respsIcons/r1-2.png",
+        "tag": "Mediana"
       },
       {
         "id": 2,
-        "answer": "Mais de 16 anos",
-        "picture": "/respsIcons/r1-3.png"
+        "answer": "Leio pouco",
+        "picture": "/respsIcons/r1-3.png",
+        "tag": "Curta"
+      },
+      {
+        "id": 3,
+        "answer": "Não leio nada",
+        "picture": "/respsIcons/r1-4.png",
+        "tag": "Curta"
       }
-    ],
-    "tip": "Quis dolore do voluptate proident exercitation mollit ea ullamco fugiat."
+    ]
   },
   {
     "_id": 1,
-    "questionText": "02. O quanto você gosta de ler?",
+    "questionText": "02. Quais desses gêneros você mais gosta?",
     "answers": [
       {
         "id": 0,
-        "answer": "Estou sempre lendo"
+        "answer": "Romance",
+        "picture": "/respsIcons/r2-1.png",
+        "tag": "Romance"
       },
       {
         "id": 1,
-        "answer": "Leio bastante"
+        "answer": "Investigação policial",
+        "picture": "/respsIcons/r2-2.png",
+        "tag": "Investigação"
       },
       {
         "id": 2,
-        "answer": "Leio pouco"
+        "answer": "Terror/ Suspense",
+        "picture": "/respsIcons/r2-3.png",
+        "tag": "Terror"
       },
       {
         "id": 3,
-        "answer": "Não leio"
+        "answer": "Literatura Regional",
+        "picture": "/respsIcons/r2-4.png",
+        "tag": "Literatura Regional"
       }
-    ],
-    "tip": "Et occaecat proident excepteur non consequat."
+    ]
   },
   {
     "_id": 2,
-    "questionText": "03. Que tipo de filme você gosta de ver?",
+    "questionText": "03. Quais momentos não poderiam faltar num livro?",
     "answers": [
       {
         "id": 0,
-        "answer": "Infantil"
+        "answer": "Aterrorizantes",
+        "picture": "/respsIcons/r3-1.png",
+        "tag": "Terror"
       },
       {
         "id": 1,
-        "answer": "Ação"
+        "answer": "Românticos",
+        "picture": "/respsIcons/r3-2.png",
+        "tag": "Romance"
       },
       {
         "id": 2,
-        "answer": "Romance"
+        "answer": "Divertidos",
+        "picture": "/respsIcons/r3-3.png",
+        "tag": "Curta"
       },
       {
         "id": 3,
-        "answer": "Mistério"
-      },
-      {
-        "id": 4,
-        "answer": "Histórico"
+        "answer": "Reflexivos",
+        "picture": "/respsIcons/r3-4.png",
+        "tag": "Investigação"
       }
-    ],
-    "tip": "Cupidatat tempor est officia nostrud."
+    ]
   },
   {
     "_id": 3,
-    "questionText": "04. Quais dessas séries você mais gosta?",
+    "questionText": "04. Qual o tipo de personagem que você mais se identifica?",
     "answers": [
       {
         "id": 0,
-        "answer": "Stranger Things"
+        "answer": "Aventureiro(a)",
+        "picture": "/respsIcons/r4-1.png",
+        "tag": "Fantasia"
       },
       {
         "id": 1,
-        "answer": "Elite"
+        "answer": "Misterioso(a)",
+        "picture": "/respsIcons/r4-2.png",
+        "tag": "Terror"
       },
       {
         "id": 2,
-        "answer": "Game of thrones"
+        "answer": "Apaixonado(a)",
+        "picture": "/respsIcons/r4-3.png",
+        "tag": "Romance"
       },
       {
         "id": 3,
-        "answer": "La Casa de Papel"
-      },
-      {
-        "id": 4,
-        "answer": "Jovens titãs em ação"
+        "answer": "Justiceiro(a)",
+        "picture": "/respsIcons/r4-4.png",
+        "tag": "Investigação"
       }
-    ],
-    "tip": "Amet amet dolor incididunt sunt amet deserunt incididunt."
+    ]
   },
   {
     "_id": 4,
-    "questionText": "05. Qual destes filmes você prefere?",
+    "questionText": "05. Escolha um destes elementos temáticos:",
     "answers": [
       {
         "id": 0,
-        "answer": "Turma da Mônica, Laços"
+        "answer": "Sertão",
+        "picture": "/respsIcons/r5-1.png",
+        "tag": "Literatura Regional"
       },
       {
         "id": 1,
-        "answer": "Para todos os garotos que já amei"
+        "answer": "2ª Guerra Mundial",
+        "picture": "/respsIcons/r5-2.png",
+        "tag": "Longa"
       },
       {
         "id": 2,
-        "answer": "Invocação do mal"
+        "answer": "Floresta Misteriosa",
+        "picture": "/respsIcons/r5-3.png",
+        "tag": "Terror"
       },
       {
         "id": 3,
-        "answer": "Jogador número um"
-      },
-      {
-        "id": 4,
-        "answer": "Harry Potter"
+        "answer": "Criaturas Mágicas",
+        "picture": "/respsIcons/r5-4.png",
+        "tag": "Fantasia"
       }
-    ],
-    "tip": "Elit consectetur aliqua ut aliqua nisi commodo quis laboris voluptate ut occaecat labore excepteur."
+    ]
   },
   {
     "_id": 5,
-    "questionText": "06. O que não poderia faltar num livro?",
+    "questionText": "06. Escolha um destes filmes ou desenhos animados:",
     "answers": [
       {
         "id": 0,
-        "answer": "Momentos engraçados"
+        "answer": "Frozen",
+        "picture": "/respsIcons/r6-1.png",
+        "tag": "Fantasia"
       },
       {
         "id": 1,
-        "answer": "Momentos aterrorizantes"
+        "answer": "A culpa é das estrelas",
+        "picture": "/respsIcons/r6-2.png",
+        "tag": "Romance"
       },
       {
         "id": 2,
-        "answer": "Momentos fofos entre um casal"
+        "answer": "Scooby Doo",
+        "picture": "/respsIcons/r6-3.png",
+        "tag": "Investigação"
       },
       {
         "id": 3,
-        "answer": "Momentos para pensar sobre a trama"
-      },
-      {
-        "id": 4,
-        "answer": "Momentos de muita emoção"
+        "answer": "sítio do Picapau Amarelo",
+        "picture": "/respsIcons/r6-4.png",
+        "tag": "Literatura Regional"
       }
-    ],
-    "tip": "Duis id ex dolor cupidatat dolore est incididunt qui eu proident sint dolore."
+    ]
   },
   {
     "_id": 6,
-    "questionText": "07. Qual seria o seu tipo de personagem?",
+    "questionText": "07. Quais destes livros você já leu e gostou?",
     "answers": [
       {
         "id": 0,
-        "answer": "Um protagonista com história sombria"
+        "answer": "Turma da Mônica",
+        "picture": "/respsIcons/r7-1.png",
+        "tag": "Literatura Regional"
       },
       {
         "id": 1,
-        "answer": "Que viva intensamente"
+        "answer": "A menina que roubava livros",
+        "picture": "/respsIcons/r7-2.png",
+        "tag": "Longa"
       },
       {
         "id": 2,
-        "answer": "Que goste de se apaixonar"
+        "answer": "Harry Potter",
+        "picture": "/respsIcons/r7-3.png",
+        "tag": "Fantasia"
       },
       {
         "id": 3,
-        "answer": "Que seja aventureiro"
-      },
-      {
-        "id": 4,
-        "answer": "Alguém igual a mim"
+        "answer": "Nenhum",
+        "picture": "/respsIcons/r7-4.png",
+        "tag": "Curta"
       }
-    ],
-    "tip": "Quis ea aliqua Lorem commodo duis aliquip ipsum ut irure ex consequat do."
+    ]
   },
   {
     "_id": 7,
-    "questionText": "08. Escolha um cenário:",
+    "questionText": "08. Escolha uma destas situações:",
     "answers": [
       {
         "id": 0,
-        "answer": "Um quarto com um corpo"
+        "answer": "Pescadores são enfeitiçados por sereia",
+        "picture": "",
+        "tag": "Literatura Regional"
       },
       {
         "id": 1,
-        "answer": "Uma bela praça cheia de árvores"
+        "answer": "Criança escala pé de feijão gigante",
+        "picture": "",
+        "tag": "Fantasia"
       },
       {
         "id": 2,
-        "answer": "Uma floresta cheia de mistérios"
+        "answer": "Polícia tenta solucinar um assassinato",
+        "picture": "",
+        "tag": "Investigação"
       },
       {
         "id": 3,
-        "answer": "O Brasil do passado"
-      },
-      {
-        "id": 4,
-        "answer": "Um local que você precisa escapar"
+        "answer": "Grupo de jovens invade casa abandonada",
+        "picture": "",
+        "tag": "Terror"
       }
-    ],
-    "tip": "Dolor ex sint amet voluptate veniam irure."
-  },
-  {
-    "_id": 8,
-    "questionText": "09. Para que época você gostaria de viajar?",
-    "answers": [
-      {
-        "id": 0,
-        "answer": "Começo do século vinte"
-      },
-      {
-        "id": 1,
-        "answer": "Não gostaria de estar em outra época"
-      },
-      {
-        "id": 2,
-        "answer": "Época dos dinossauros"
-      },
-      {
-        "id": 3,
-        "answer": "Época medieval"
-      },
-      {
-        "id": 4,
-        "answer": "Ao futuro"
-      }
-    ],
-    "tip": "Amet minim sunt nulla reprehenderit aute officia adipisicing cillum veniam est labore et aliquip eu."
-  },
-  {
-    "_id": 9,
-    "questionText": "10. Escolha uma situação:",
-    "answers": [
-      {
-        "id": 0,
-        "answer": "Um garoto subindo um pé de feijão"
-      },
-      {
-        "id": 1,
-        "answer": "Um rapaz numa escola de magia"
-      },
-      {
-        "id": 2,
-        "answer": "Um homem que desconfia da esposa"
-      },
-      {
-        "id": 3,
-        "answer": "Um detetive querendo solucionar um crime"
-      },
-      {
-        "id": 4,
-        "answer": "Alguém que quer vingança"
-      }
-    ],
-    "tip": "Consectetur minim sit veniam voluptate deserunt culpa dolore occaecat dolore est."
+    ]
   }
 ]

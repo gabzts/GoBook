@@ -11,8 +11,8 @@ export default function Header() {
             <a className={styles.logo}>
               <Image src={bibiLogo}
               alt='Logo da bibi'
-              width={100}
-              height={100}/>
+              width={70}
+              height={70}/>
               Bibi
             </a>
           </Link>

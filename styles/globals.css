@@ -2,9 +2,8 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Nunito', sans-serif;
+  background: #F8F8F8;
 }
 
 a {
@@ -13,22 +12,7 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-header{
-  background: #F9ECFD;
-  width: 100%;
-}
-
-header h1.logo{
-  padding: 0 2rem;
-  font-weight: 500;
-  cursor: pointer;
-  width: fit-content;
-}
-
-header h1.logo span{
-  color: #cb48f0;
-  font-weight: bold;
 }

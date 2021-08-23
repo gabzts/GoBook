@@ -1,7 +1,9 @@
 .header{
-    display: flex;
+    display: block;
     padding: 0.2rem 0 0 2rem;
     background-color: #FD5E70;
+    width: 100%;
+    overflow: hidden;
 }
 
 .header h1{
@@ -15,11 +17,10 @@
 
 .logo{
     font-weight: 900;
-    font-size: 36px;
+    font-size: 26px;
     padding-left: 24px;
     color: #F8F8F8;
     display: flex;
     align-items: center;
     vertical-align: center;
-    gap: 1rem;
 }

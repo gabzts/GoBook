@@ -1,15 +1,5 @@
-.hr{
-  stroke: grey 2px;
-  width: 500px;
-}
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.container{
+  max-width: 100%;
 }
 
 .index{
@@ -17,14 +7,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
 
   background-color: #F8F8F8;
 }
 
 .index .interact{
   width: 50%;
-  margin: 2rem auto 0;
+  margin: 2rem auto;
 }
 
 .interact .title{
@@ -36,7 +25,7 @@
 }
 
 .interact .description{
-  width: 600px;
+  width: 400px;
   margin: 40px 0;
   text-align: left;
   font-size: 1rem;
@@ -44,11 +33,8 @@
 
 .main {
   padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .slider{
@@ -60,21 +46,6 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-}
-
-.footer {
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  background: #f3cdff;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title {
@@ -99,11 +70,6 @@
   border-radius: 2rem;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
 .action{
   margin-top: 3rem;
 }
@@ -125,8 +91,10 @@
 
 .bigButton{
   padding: 1rem 2rem;
+  margin: 6rem auto;
   background: #48D7A1;
   border: none;
+  display: block;
 
   color: #414042;
   font-family: 'Lato', sans-serif;
@@ -168,56 +136,27 @@
   cursor: pointer;
 
   transition: all 0.2s;
-  max-width: calc(20% - 1rem);
+  width: calc(25% - 1rem);
+  min-height: 12rem;
 }
 
-.ansButton:hover,
-.ansButton:active{
+.ansButton:hover{
   border: 2px solid #4C4B4D;
 }
 
-.dica {
-  font-size: 1.4rem;
+.ansButton p{
+  height: 3rem;
 }
 
 .grid {
   display: flex;
   align-items: center;
   justify-content: left;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 3rem;
   gap: 1rem;
-}
 
-.card {
-  text-align: left;
-  color: inherit;
-
-  margin: 1rem;
-  padding: 1.5rem;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  width: 100%;
 }
 
 .logo {
@@ -228,18 +167,122 @@
   vertical-align: center;
 }
 
+.result{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  display: block;
+  font-size: 1.6rem;
+  color: #414042;
+}
+
+.result b{
+  font-weight: 900;
+  font-size: 2.6rem;
+}
+
 .book{
-  width: 400px;
   height: 600px;
-  background-color: #f3cdff;
-  margin: 1rem 0;
+  margin: 1rem auto;
   border-radius: 0.4rem;
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.coruja{
+  margin: 0.5rem auto;
+  position: relative;
+  left: -15rem;
+}
+
+.quadroLivro{
+  position: relative;
+  top: -20px;
+  background: url("../src/images/quadrofinal.png");
+  margin: 0 auto;
+  max-width: 669px;
+  height: 797px;
+  background-size: cover;
+  display: block;
+}
+
+.quadroLivro .head{
+  position: relative;
+  top: 4rem;
+  color: #414042;
+}
+
+.quadroLivro .tituloLivro{
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+}
+
+.quadroLivro .escritor{
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+}
+
+.quadroLivro .livros{
+  display: flex;
+  position: relative;
+  top: 10%;
+}
+
+.livros .arrow{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: none;
+  margin: auto;
+
+  background-color: #48D7A1;
+  box-shadow: 0px 8px #97801a;
+}
+
+.quadroLivro .sinopse{
+  position: relative;
+  top: 6rem;
+  text-align: justify;
+  margin: 0 5rem;
+  font-size: 14px;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: left;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.local{
+  padding-left: 15px;
+}
+
+.footer {
+  display: block;
+  position: relative;
+  top: 2rem;
+
+  margin: 200px auto 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+  .interact .title{
+    width: 500px;
+    margin-top: 0;
+  }
+
+  .answerActionsButtons{
+    margin-top: 1rem;
+  }
+
+  .ansButton p {
+    font-size: 0.8rem;
   }
 }
