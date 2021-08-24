@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Header from '../src/components/Header'
 import styles from '../styles/Home.module.css'
 import fundo from '../src/images/fundoInicial.png'
+import ccm from '../src/images/ccmpsc.png'
 
 export default function Home() {
   
@@ -20,9 +21,8 @@ export default function Home() {
       <main className={styles.index}>
         <Image src={fundo} 
         className={styles.ilustration}
-        width={600}
-        height={650}
-        layout="fixed"
+        width={660}
+        height={740}
         />
 
         <div className={styles.interact}>
@@ -44,9 +44,16 @@ export default function Home() {
               </Link>
             </button>
           </div>
+
+          <div className={styles.ccm}>
+            <Image src={ccm}
+              width={99}
+              height={44}
+              layout="fixed"
+            />
+          </div>
         </div>
       </main>
-
     </div>
   </>
   )

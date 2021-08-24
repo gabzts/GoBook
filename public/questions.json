@@ -2,29 +2,30 @@
   {
     "_id": 0,
     "questionText": "01. O quanto você gosta de ler livros?",
+    "picture": "/imgQuestions/1.png",
     "answers": [
       {
         "id": 0,
         "answer": "Estou sempre lendo",
-        "picture": "/respsIcons/r1-1.png",
+        "icon": "/respsIcons/r1-1.png",
         "tag": "Longa"
       },
       {
         "id": 1,
         "answer": "Leio mais ou menos",
-        "picture": "/respsIcons/r1-2.png",
+        "icon": "/respsIcons/r1-2.png",
         "tag": "Mediana"
       },
       {
         "id": 2,
         "answer": "Leio pouco",
-        "picture": "/respsIcons/r1-3.png",
+        "icon": "/respsIcons/r1-3.png",
         "tag": "Curta"
       },
       {
         "id": 3,
         "answer": "Não leio nada",
-        "picture": "/respsIcons/r1-4.png",
+        "icon": "/respsIcons/r1-4.png",
         "tag": "Curta"
       }
     ]
@@ -32,29 +33,30 @@
   {
     "_id": 1,
     "questionText": "02. Quais desses gêneros você mais gosta?",
+    "picture": "/imgQuestions/2.png",
     "answers": [
       {
         "id": 0,
         "answer": "Romance",
-        "picture": "/respsIcons/r2-1.png",
+        "icon": "/respsIcons/r2-1.png",
         "tag": "Romance"
       },
       {
         "id": 1,
         "answer": "Investigação policial",
-        "picture": "/respsIcons/r2-2.png",
+        "icon": "/respsIcons/r2-2.png",
         "tag": "Investigação"
       },
       {
         "id": 2,
         "answer": "Terror/ Suspense",
-        "picture": "/respsIcons/r2-3.png",
+        "icon": "/respsIcons/r2-3.png",
         "tag": "Terror"
       },
       {
         "id": 3,
         "answer": "Literatura Regional",
-        "picture": "/respsIcons/r2-4.png",
+        "icon": "/respsIcons/r2-4.png",
         "tag": "Literatura Regional"
       }
     ]
@@ -62,29 +64,30 @@
   {
     "_id": 2,
     "questionText": "03. Quais momentos não poderiam faltar num livro?",
+    "picture": "/imgQuestions/3.png",
     "answers": [
       {
         "id": 0,
         "answer": "Aterrorizantes",
-        "picture": "/respsIcons/r3-1.png",
+        "icon": "/respsIcons/r3-1.png",
         "tag": "Terror"
       },
       {
         "id": 1,
         "answer": "Românticos",
-        "picture": "/respsIcons/r3-2.png",
+        "icon": "/respsIcons/r3-2.png",
         "tag": "Romance"
       },
       {
         "id": 2,
         "answer": "Divertidos",
-        "picture": "/respsIcons/r3-3.png",
+        "icon": "/respsIcons/r3-3.png",
         "tag": "Curta"
       },
       {
         "id": 3,
         "answer": "Reflexivos",
-        "picture": "/respsIcons/r3-4.png",
+        "icon": "/respsIcons/r3-4.png",
         "tag": "Investigação"
       }
     ]
@@ -92,29 +95,30 @@
   {
     "_id": 3,
     "questionText": "04. Qual o tipo de personagem que você mais se identifica?",
+    "picture": "/imgQuestions/4.png",
     "answers": [
       {
         "id": 0,
         "answer": "Aventureiro(a)",
-        "picture": "/respsIcons/r4-1.png",
+        "icon": "/respsIcons/r4-1.png",
         "tag": "Fantasia"
       },
       {
         "id": 1,
         "answer": "Misterioso(a)",
-        "picture": "/respsIcons/r4-2.png",
+        "icon": "/respsIcons/r4-2.png",
         "tag": "Terror"
       },
       {
         "id": 2,
         "answer": "Apaixonado(a)",
-        "picture": "/respsIcons/r4-3.png",
+        "icon": "/respsIcons/r4-3.png",
         "tag": "Romance"
       },
       {
         "id": 3,
         "answer": "Justiceiro(a)",
-        "picture": "/respsIcons/r4-4.png",
+        "icon": "/respsIcons/r4-4.png",
         "tag": "Investigação"
       }
     ]
@@ -122,29 +126,30 @@
   {
     "_id": 4,
     "questionText": "05. Escolha um destes elementos temáticos:",
+    "picture": "/imgQuestions/5.png",
     "answers": [
       {
         "id": 0,
         "answer": "Sertão",
-        "picture": "/respsIcons/r5-1.png",
+        "icon": "/respsIcons/r5-1.png",
         "tag": "Literatura Regional"
       },
       {
         "id": 1,
         "answer": "2ª Guerra Mundial",
-        "picture": "/respsIcons/r5-2.png",
+        "icon": "/respsIcons/r5-2.png",
         "tag": "Longa"
       },
       {
         "id": 2,
         "answer": "Floresta Misteriosa",
-        "picture": "/respsIcons/r5-3.png",
+        "icon": "/respsIcons/r5-3.png",
         "tag": "Terror"
       },
       {
         "id": 3,
         "answer": "Criaturas Mágicas",
-        "picture": "/respsIcons/r5-4.png",
+        "icon": "/respsIcons/r5-4.png",
         "tag": "Fantasia"
       }
     ]
@@ -152,29 +157,30 @@
   {
     "_id": 5,
     "questionText": "06. Escolha um destes filmes ou desenhos animados:",
+    "picture": "/imgQuestions/6.png",
     "answers": [
       {
         "id": 0,
         "answer": "Frozen",
-        "picture": "/respsIcons/r6-1.png",
+        "icon": "/respsIcons/r6-1.png",
         "tag": "Fantasia"
       },
       {
         "id": 1,
         "answer": "A culpa é das estrelas",
-        "picture": "/respsIcons/r6-2.png",
+        "icon": "/respsIcons/r6-2.png",
         "tag": "Romance"
       },
       {
         "id": 2,
         "answer": "Scooby Doo",
-        "picture": "/respsIcons/r6-3.png",
+        "icon": "/respsIcons/r6-3.png",
         "tag": "Investigação"
       },
       {
         "id": 3,
         "answer": "sítio do Picapau Amarelo",
-        "picture": "/respsIcons/r6-4.png",
+        "icon": "/respsIcons/r6-4.png",
         "tag": "Literatura Regional"
       }
     ]
@@ -182,29 +188,30 @@
   {
     "_id": 6,
     "questionText": "07. Quais destes livros você já leu e gostou?",
+    "picture": "/imgQuestions/7.png",
     "answers": [
       {
         "id": 0,
         "answer": "Turma da Mônica",
-        "picture": "/respsIcons/r7-1.png",
+        "icon": "/respsIcons/r7-1.png",
         "tag": "Literatura Regional"
       },
       {
         "id": 1,
         "answer": "A menina que roubava livros",
-        "picture": "/respsIcons/r7-2.png",
+        "icon": "/respsIcons/r7-2.png",
         "tag": "Longa"
       },
       {
         "id": 2,
         "answer": "Harry Potter",
-        "picture": "/respsIcons/r7-3.png",
+        "icon": "/respsIcons/r7-3.png",
         "tag": "Fantasia"
       },
       {
         "id": 3,
         "answer": "Nenhum",
-        "picture": "/respsIcons/r7-4.png",
+        "icon": "/respsIcons/r7-4.png",
         "tag": "Curta"
       }
     ]
@@ -212,29 +219,30 @@
   {
     "_id": 7,
     "questionText": "08. Escolha uma destas situações:",
+    "picture": "/imgQuestions/8.png",
     "answers": [
       {
         "id": 0,
         "answer": "Pescadores são enfeitiçados por sereia",
-        "picture": "",
+        "icon": "",
         "tag": "Literatura Regional"
       },
       {
         "id": 1,
         "answer": "Criança escala pé de feijão gigante",
-        "picture": "",
+        "icon": "",
         "tag": "Fantasia"
       },
       {
         "id": 2,
         "answer": "Polícia tenta solucinar um assassinato",
-        "picture": "",
+        "icon": "",
         "tag": "Investigação"
       },
       {
         "id": 3,
         "answer": "Grupo de jovens invade casa abandonada",
-        "picture": "",
+        "icon": "",
         "tag": "Terror"
       }
     ]

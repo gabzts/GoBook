@@ -77,6 +77,23 @@ export default function Questions() {
     }, 800)
   }
 
+  const prevQuestion = () =>{
+    //verificar se é a primeira questão
+    if(currentQuestion != 0){
+      //tirando o último valor das escolhas
+      const tirarUltimaEscolha = choices.filter(ultimaEscolha)
+      setChoices((arr) => [...tirarUltimaEscolha])
+
+      //setando a questão para voltar a anterior
+      const previousQuestion = currentQuestion - 1;
+      setCurrentQuestion(previousQuestion)
+    }
+  }
+  //verificar se o elemento do array é o último
+  function ultimaEscolha(value) {
+    return value != choices[choices.length - 1];
+  }
+
   //analisar e enviar resultados para a página final
   const generateResults = (choices) => {
     //const arr = ['1', '1', '2', '2', '2'];
@@ -109,11 +126,7 @@ export default function Questions() {
     var tamanhoMaisEscolhido = arrayDeObjsTamanho.sort((a, b) => b.quantidade - a.quantidade);
     tamanhoMaisEscolhido = tamanhoMaisEscolhido[0].tag;
 
-    console.log(generoMaisEscolhido);
-    console.log(tamanhoMaisEscolhido);
-
     Router.push(`/books/${generoMaisEscolhido}/${tamanhoMaisEscolhido}`);
-
 
   }
 
@@ -143,13 +156,18 @@ export default function Questions() {
         </Head>
 
         <main className={styles.index}>
-          <div className={styles.questionImg}>
-            <Image src={fundo} 
-            className={styles.ilustration}
-            width={700}
-            height={655}
-            />
-          </div>
+          {
+            //foto da questão
+            finalizado == false && question && question.length>0 && question[currentQuestion]!=null 
+            ? <div className={styles.questionImg}>
+                <Image src={question[currentQuestion].picture} 
+                className={styles.ilustration}
+                width={700}
+                height={680}
+                />
+              </div>
+            : <p>Carregando!</p> 
+          }
         
           <div className={styles.interact}>
             {
@@ -178,8 +196,8 @@ export default function Questions() {
               {finalizado == false && question[currentQuestion]!=null ? question[currentQuestion].answers.map((itemAtual) => {
                   return (
                     <button key={itemAtual.id} className={styles.ansButton} onClick={(e)=> handleAnswerButtonClick(e, itemAtual.tag)}>
-                      {itemAtual.picture !== "" ? 
-                      <Image src={itemAtual.picture}
+                      {itemAtual.icon !== "" ? 
+                      <Image src={itemAtual.icon}
                       alt="ícone da pergunta"
                       className={styles.respImg}
                       width={100}
@@ -197,7 +215,7 @@ export default function Questions() {
             </div>
 
             <div className={styles.action} style={disable}>
-              <button className={styles.answerActionsButtons}>
+              <button className={styles.answerActionsButtons} onClick={() => prevQuestion()}>
                 Voltar
               </button>
             </div>

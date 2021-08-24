@@ -8,7 +8,6 @@ import coruja from '../../../src/images/coruja.png'
 import local from '../../../src/images/local.png'
 import LArrow from '../../../src/images/LArrow.svg'
 import RArrow from '../../../src/images/RArrow.svg'
-import capa from '../../../src/images/capaLivro.png'
 import { connectToDatabase } from "../../../lib/connect";
 
 export default function Tamanho( {livros} ) {
