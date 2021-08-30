@@ -32,9 +32,16 @@ O projeto de aplicação voltado para a Biblioteca Fátima Costa, do Projeto ABC
 - [x] Recomeçar após terminar
 - [ ] Responsividade total
 
-<h1 align="center">
+---
+
+Pode testar o aplicativo funcionando diretamente na url:
+<h3>https://gobook-jkxuboqhx-thesupereor.vercel.app/</h3>
+
+<a align="center" href="https://gobook-jkxuboqhx-thesupereor.vercel.app/">
   <img src="https://user-images.githubusercontent.com/55772578/131395276-2e37cefd-d6fa-41a1-9a7b-6e8ed2cf942b.png" />
-</h1>
+</a>
+
+---
 
 ### 🎫 Pré-requisitos
 
