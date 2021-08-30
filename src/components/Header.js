@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image'
-import bibiLogo from '../images/bibi.svg'
+import bibiLogo from '../images/bibi logo.png'
 import styles from './header.module.css'
 
 export default function Header() {
@@ -11,8 +11,10 @@ export default function Header() {
             <a className={styles.logo}>
               <Image src={bibiLogo}
               alt='Logo da bibi'
-              width={70}
-              height={70}/>
+              width={60}
+              height={75}
+              quality={100}
+              />
               Bibi
             </a>
           </Link>

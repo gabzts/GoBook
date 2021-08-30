@@ -223,26 +223,26 @@
     "answers": [
       {
         "id": 0,
-        "answer": "Pescadores são enfeitiçados por sereia",
-        "icon": "",
+        "answer": "A lenda da sereia Iara",
+        "icon": "/respsIcons/r8-1.png",
         "tag": "Literatura Regional"
       },
       {
         "id": 1,
-        "answer": "Criança escala pé de feijão gigante",
-        "icon": "",
+        "answer": "João e o pé de feijão",
+        "icon": "/respsIcons/r8-2.png",
         "tag": "Fantasia"
       },
       {
         "id": 2,
-        "answer": "Polícia tenta solucinar um assassinato",
-        "icon": "",
+        "answer": "Um misterioso assassinato",
+        "icon": "/respsIcons/r8-3.png",
         "tag": "Investigação"
       },
       {
         "id": 3,
-        "answer": "Grupo de jovens invade casa abandonada",
-        "icon": "",
+        "answer": "Maldição da casa mal assombrada",
+        "icon": "/respsIcons/r8-4.png",
         "tag": "Terror"
       }
     ]

@@ -22,13 +22,14 @@
   text-align: left;
   color: #414042;
   margin-top: 4rem;
+  width: auto;
 }
 
 .interact .description{
-  width: 400px;
-  margin: 40px 0;
+  width: auto;
+  margin: 10px 40px 10px 0;
   text-align: left;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 .main {
@@ -37,12 +38,31 @@
   margin: 0 auto;
 }
 
-.ccm{
-  margin: 0 0 0 30rem;
+
+.bigButton{
+  padding: 0.7rem 1.6rem;
+  margin: 6rem auto ;
+  width: 184px;
+
+  background: #48D7A1;
+  border: none;
+  display: block;
+
+  color: #414042;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 12px 12px, 11px 11px, 10px 10px, 9px 9px, 8px 8px, 7px 7px, 6px 6px, 5px 5px, 4px 4px, 3px 3px, 2px 2px, 1px 1px #414042;
 }
 
-.slider{
-  display: flex;
+.bigButton:hover{
+  background: #41dfa2;
+}
+
+.ccm{
+  margin: 0 20px 0 700px;
 }
 
 .respondida{
@@ -66,6 +86,9 @@
 
 .questionImg{
   margin-left: -10px;
+  margin-top: -0.3px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .question{
@@ -79,6 +102,7 @@
 }
 
 .action{
+  margin: 0 calc(50% - 120px) ;
   margin-top: 3rem;
 }
 
@@ -97,37 +121,12 @@
   box-shadow: 12px 12px, 11px 11px, 10px 10px, 9px 9px, 8px 8px, 7px 7px, 6px 6px, 5px 5px, 4px 4px, 3px 3px, 2px 2px, 1px 1px #414042;
 }
 
-.bigButton{
-  padding: 1rem 2rem;
-  margin: 6rem auto;
-  background: #48D7A1;
-  border: none;
-  display: block;
-
-  color: #414042;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-  cursor: pointer;
-
-  box-shadow: 12px 12px, 11px 11px, 10px 10px, 9px 9px, 8px 8px, 7px 7px, 6px 6px, 5px 5px, 4px 4px, 3px 3px, 2px 2px, 1px 1px #414042;
-}
-
-.bigButton:hover{
-  background: #41dfa2;
-}
-
 .progress{
   font-style: 'Lato', sans-serif;
   font-weight: 700;
   color: #414042;
   font-size: 2rem;
   margin: 0;
-}
-
-.respImg{
-  padding-top: 1.8rem;
-  max-width: 100%;
 }
 
 .ansButton{
@@ -145,15 +144,16 @@
 
   transition: all 0.2s;
   width: calc(25% - 1rem);
-  min-height: 12rem;
+  height: 250px;
 }
 
 .ansButton:hover{
   border: 2px solid #4C4B4D;
 }
 
+
 .ansButton p{
-  height: 3rem;
+  padding-top: 10px;
 }
 
 .grid {
@@ -161,7 +161,7 @@
   align-items: center;
   justify-content: left;
   flex-wrap: nowrap;
-  margin-top: 3rem;
+  margin-top: 1rem;
   gap: 1rem;
 
   width: 100%;
@@ -176,11 +176,15 @@
 }
 
 .result{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   font-family: 'Lato', sans-serif;
-  display: block;
   font-size: 1.6rem;
   color: #414042;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
 }
 
 .result b{
@@ -188,28 +192,31 @@
   font-size: 2.6rem;
 }
 
+.coruja{
+  position: relative;
+  left: -1.5rem;
+}
+
 .book{
   height: 600px;
-  margin: 1rem auto;
+  margin: 1rem auto 1rem;
   border-radius: 0.4rem;
   text-align: center;
 }
 
-.coruja{
-  margin: 0.5rem auto;
-  position: relative;
-  left: -15rem;
-}
-
 .quadroLivro{
   position: relative;
-  top: -20px;
-  background: url("../src/images/quadrofinal.png");
+  background: url("../src/images/quadrofinal2.png");
   margin: 0 auto;
-  max-width: 669px;
-  height: 999px;
+  max-width: 715px;
+  height: 417px;
   background-size: cover;
-  display: block;
+  display: flex;
+}
+
+.info{
+  text-align: left;
+
 }
 
 .quadroLivro .head{
@@ -228,19 +235,21 @@
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
+  margin-top: -5px;
 }
 
 .quadroLivro .livros{
   display: flex;
   position: relative;
-  top: 10%;
+  top: 18%;
 }
 
 .quadroLivro .livros .capa{
-  padding: 1.6rem;
+  padding: .3rem;
   background-color: white;
-  
-  box-shadow: 0px 8px #97801a;
+  margin: 0 50px 0 80px;
+  height: 265px;
+  overflow: hidden;
 }
 
 .livros .arrow{
@@ -256,38 +265,73 @@
 
 .quadroLivro .sinopse{
   position: relative;
-  top: 8.6rem;
-  margin: 0 5rem;
+  top: 5rem;
+  width: 330px;
+  max-height: 220px;
+  overflow: scroll;
 
-  text-align: justify;
-  font-size: 17px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
   color: #414042;
 }
 
-.description {
+.quadroLivro .sinopse::-webkit-scrollbar{
+  background: transparent;
+  width: 10px;
+}
+
+.quadroLivro .sinopse::-webkit-scrollbar-corner{
+  background: transparent;
+}
+
+.quadroLivro .sinopse::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background: #dbb509;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  top: -300px;
+
+  margin: 0 auto 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer hr{
+  height: 60px;
+  border-left: 2px solid #414042
+}
+
+.footer .bigButton{
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.footer .description {
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: left;
 
-  margin: 0 auto;
+  margin: 0 40px 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .local{
   padding-left: 15px;
+  color: #414042;
 }
 
-.footer {
-  display: block;
-  position: relative;
-  top: 2rem;
-
-  margin: 400px auto 0;
-  justify-content: center;
-  align-items: center;
+.local p b{
+  font-size: 18px;
 }
 
+.local p{
+  font-size: 12px;
+}
 
 @media (max-width: 1200px) {
   .interact .title{

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../src/components/Header'
 import styles from '../styles/Home.module.css'
-import fundo from '../src/images/fundoInicial.png'
+import fundo from '../src/images/fundoInicial2.png'
 import ccm from '../src/images/ccmpsc.png'
 
 export default function Home() {
@@ -21,8 +21,9 @@ export default function Home() {
       <main className={styles.index}>
         <Image src={fundo} 
         className={styles.ilustration}
-        width={660}
-        height={740}
+        width={860}
+        height={860}
+        quality={100}
         />
 
         <div className={styles.interact}>
@@ -50,6 +51,7 @@ export default function Home() {
               width={99}
               height={44}
               layout="fixed"
+              quality={100}
             />
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Header from '../../../src/components/Header'
 import styles from '../../../styles/Home.module.css'
 import coruja from '../../../src/images/coruja.png'
@@ -14,27 +14,29 @@ export default function Tamanho( {livros} ) {
   const [livroAtual, setLivroAtual] = useState(0)
   console.log(livros)
 
-  const PassarLivro = (e) => {
-    console.log(livroAtual)
+  // const PassarLivro = (e) => {
+  //   console.log(livroAtual)
 
-    const proximoLivro = livroAtual + 1
-    if(livroAtual < (livros.length - 1)){
-      setLivroAtual(proximoLivro)
-    }else{
-      setLivroAtual(livroAtual)
-    }
-  }
+  //   const proximoLivro = livroAtual + 1
+  //   if(livroAtual < (livros.length - 1)){
+  //     setLivroAtual(proximoLivro)
+  //   }else{
+  //     setLivroAtual(livroAtual)
+  //   }
+  // }
 
-  const VoltarLivro = (e) => {
-    console.log(livroAtual)
+  // const VoltarLivro = (e) => {
+  //   console.log(livroAtual)
 
-    const proximoLivro = livroAtual - 1
-    if(livroAtual > 0){
-      setLivroAtual(proximoLivro)
-    }else{
-      setLivroAtual(livroAtual)
-    }
-  }
+  //   const proximoLivro = livroAtual - 1
+  //   if(livroAtual > 0){
+  //     setLivroAtual(proximoLivro)
+  //   }else{
+  //     setLivroAtual(livroAtual)
+  //   }
+  // }
+
+
 
   return (
     <>
@@ -50,50 +52,55 @@ export default function Tamanho( {livros} ) {
         <main className={styles.main}>
 
           <div className={styles.result}>
-            <p>Seu livro é do gênero de</p>
-            <p><b>{livros[livroAtual].genero}</b></p>
+            <div className={styles.coruja}>
+                  <Image src={coruja}
+                  width={84}
+                  height={96}
+                  quality={100}
+                />
+            </div>
+            <div>
+              <p>Seu livro é do gênero de</p>
+              <p><b>{livros[livroAtual].genero}</b></p>
+            </div>
           </div>
 
-          
           <div className={styles.book}>
-            <div className={styles.coruja}>
-                <Image src={coruja}
-                width={84}
-                height={96}
-              />
-            </div>
             <div className={styles.quadroLivro}>
-              <div className={styles.head}>
-                <p className={styles.tituloLivro}>{livros[livroAtual].nome}</p>
-                <p className={styles.escritor}>{livros[livroAtual].autor}</p>
+              <div className={styles.livros}>
+                    {/* <button className={styles.arrow} onClick={(e) => VoltarLivro(e)}>
+                      <Image src={LArrow}
+                        width={15}
+                        height={15}
+                      />
+                    </button> */}
+
+                    <div className={styles.capa}>
+                      <Image src={livros[livroAtual].image_url}
+                        width={180}
+                        height={255}
+                        quality={100}
+                      />
+                    </div>
+
+                    {/* <button className={styles.arrow} onClick={(e) => PassarLivro(e)}>
+                      <Image src={RArrow}
+                        width={15}
+                        height={15}
+                      />
+                    </button> */}
               </div>
 
-              <div className={styles.livros}>
-                <button className={styles.arrow} onClick={(e) => VoltarLivro(e)}>
-                  <Image src={LArrow}
-                    width={15}
-                    height={15}
-                  />
-                </button>
-
-                <div className={styles.capa}>
-                  <Image src={livros[livroAtual].image_url}
-                    width={232}
-                    height={345}
-                  />
+              <div className={styles.info}>
+                <div className={styles.head}>
+                  <p className={styles.tituloLivro}>{livros[livroAtual].nome}</p>
+                  <p className={styles.escritor}>{livros[livroAtual].autor}</p>
                 </div>
 
-                <button className={styles.arrow} onClick={(e) => PassarLivro(e)}>
-                  <Image src={RArrow}
-                    width={15}
-                    height={15}
-                  />
-                </button>
+                <p className={styles.sinopse}>
+                  {livros[livroAtual].sinopse}
+                </p>
               </div>
-
-              <p className={styles.sinopse}>
-                {livros[livroAtual].sinopse}
-              </p>
             </div> 
           </div>
         </main>
@@ -102,8 +109,8 @@ export default function Tamanho( {livros} ) {
           
           <div className={styles.description}>
             <Image src={local}
-              width={70}
-              height={70}
+              width={45}
+              height={32}
             />
             <div className={styles.local}>
               <p><b>Biblioteca Fátima Costa</b></p>
@@ -111,9 +118,11 @@ export default function Tamanho( {livros} ) {
             </div>
           </div>
 
+          <hr></hr>
+
           <button className={styles.bigButton}>
               <Link href="/">
-                  <a>Refazer teste!</a>
+                  <a>Recomeçar</a>
               </Link>
           </button>
         </div>
@@ -134,10 +143,12 @@ export async function getServerSideProps(params) {
 
   const livros = await db
     .collection("Livros")
-    .find(
+    .find
+    (
       {tag_gen: query.genero , $text: { $search: query.tamanho } }
-   ).sort( { score: { $meta: "textScore" } } )
-    .toArray();
+    )
+   .sort( { score: { $meta: "textScore" } } )
+   .toArray();
 
   return {
     props: {

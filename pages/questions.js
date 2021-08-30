@@ -162,8 +162,10 @@ export default function Questions() {
             ? <div className={styles.questionImg}>
                 <Image src={question[currentQuestion].picture} 
                 className={styles.ilustration}
-                width={700}
-                height={680}
+                width={800}
+                height={860}
+                objectFit="fill"
+                quality={100}
                 />
               </div>
             : <p>Carregando!</p> 
