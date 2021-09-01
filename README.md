@@ -6,7 +6,7 @@
 
 <h2> ⚛ Introdução e informações</h2>
 
-<p>Esse é um projeto feito em parceria com a equipe GO!, cujos integrantes são:</p>
+<p>Esse é um projeto feito pela equipe GO!, cujos integrantes são:</p>
 
 <ul>
   <li>Emanuel Bandeira Farias - 496472</li>
@@ -61,9 +61,3 @@ Para poder utilizar é necessário baixar o programa e conferir se as dependênc
 Para poder utilizar a recomendação é necessário um acesso a um banco de dados, o que disponibilizei deve servir, mas pode criar um banco de dados próprio e importar, adaptando o programa para fazer a query corretamente.
 
 ---
-### Autor
-
-Feito com ❤️, 💦 e ☕! Entre em contato!
-
-[![Twitter Badge](https://img.shields.io/badge/-@TheSupereor-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/thesupereor)](https://twitter.com/thesupereor) 
-[![Linkedin Badge](https://img.shields.io/badge/-Narciso-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/narcisoferreira/)](https://www.linkedin.com/in/narcisoferreira/) 
